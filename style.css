@@ -1,0 +1,183 @@
+/* Replicate the look of the Braun Et66 */
+
+body {
+	background: #aaaaaa;
+	margin: 0px;
+	padding: 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#calculator, #powerCircleOff {
+	background: linear-gradient(to bottom right, #141414, #0c0c0c);
+}
+
+#calculator {
+  height: 650px;
+  width: 390px;
+	box-shadow: 10px 10px 10px 0px #d0d0d0;
+	border: 3px #fdfdfd solid;
+	border-radius: 10px 10px 30px 30px;
+  padding: 45px 40px 45px	40px;
+  position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h5 {
+  color: #ffffff;
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 0px 0px 20px 0px;
+}
+#results, #innerBox, #screenHolder {
+	width: 100%;
+}
+
+#innerBox, #screenHolder {
+	height: 100%;
+}
+
+#results {
+	background: linear-gradient(to bottom right, #141414, #000000);
+	height: 105px;
+	border-radius: 3px;
+	box-shadow: inset 3px 10px 10px 0px #d0d0d0;
+	margin-bottom: 30px;
+	padding: 10px 10px 25px 10px;
+}
+
+#innerBox {
+	background: #818587;
+	padding: 5px 15px;
+	border-radius: 3px;
+	box-shadow: inset 0px 5px 5px 0px #3e3e3e;
+}
+
+#screenHolder {
+	background: #b4b8a9;
+	border-radius: 6px;
+	text-align: right;
+	box-shadow: inset 0px 3px 7px 0px #3e3e3e, inset -1px -1px 3px #ffffff;
+	padding: 5px;
+}
+
+#answer {
+	font-family: 'Open Sans Condensed';
+	font-size: 36px;
+	line-height: 40px;
+	letter-spacing: 10px;
+}
+
+#powerLightOn {
+  height: 16px;
+	width: 16px;
+  background: green;
+	border-radius: 50%;
+  box-shadow: 2px 2px 4px 1px #aaaaaa, inset 4px 4px 3px #ffffff;
+	margin: 0px 36px 0px 16px; 
+}
+
+#powerLightOff {
+  height: 16px;
+	width: 16px;
+  background: red;
+	border-radius: 50%;
+  box-shadow: 2px 2px 4px 1px #aaaaaa, inset 4px 4px 3px #ffffff;
+	margin: 0px 0px 0px 14px; 
+}
+
+#powerDots li {
+	height: 2px;
+	width: 2px;
+  background: #ffffff;
+	border-radius: 50%;
+	margin: 0px 36px 0px 26px;
+}
+
+#powerCircleOn, #powerCircleOff {
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	border: 1px #ffffff solid;
+	margin: 0px 34px 0px 24px
+}
+
+#powerCircleOn {
+	background: #ffffff;
+}
+
+#regularButtons li, #powerDots li, #powerCircles li, #powerLights li {
+	display: inline-block;
+}
+
+#regularButtons li {
+	margin: 0px 17px 17px 0px;
+}
+
+#regularButtons li:nth-child(4n) {
+    margin-right: 0px;
+}
+
+button {
+	height: 60px;
+	width: 60px;
+	background: linear-gradient(to bottom right, #141414, #000000);
+  color: #ffffff;
+	border-radius: 50%;
+	border: solid 1px transparent;
+	box-shadow: 2px 2px 4px 1px #aaaaaa, inset 4px 4px 3px #fff;
+	cursor: pointer;
+	outline: none;
+	font-family: 'Karla';
+	font-size: 20px;
+	line-height: 60px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+button:active {
+	box-shadow: inset 1px 1px 4px 1px #aaa;
+}
+
+.operator, .clear, .equals {
+	color: #ffffff;
+  background: #49311c;
+	font-family: "Karla", sans-serif;
+	font-size: 20px;
+	line-height: 60px;
+}
+
+.clear {
+  margin: 0px 0px 15px 0px;
+}
+
+.equals {
+	background: #d8b40f;
+	box-shadow: 2px 2px 4px 1px #aaa, inset 4px 4px 3px rgba(255,255,255,0.3);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
